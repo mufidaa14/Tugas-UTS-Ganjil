@@ -1,0 +1,58 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website-Project</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+   
+  <!--  Medsos  -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><i class="fa-solid fa-user"></i> me</li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCY8-sNvQ-UmqZVeVPszoAuQ"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1><a href="{% url 'depan' %}">@Fdaate</a></h1>
+            <ul>
+                <li class="active"><a href="{% url 'depan' %}">Home</a></li>
+                <li ><a href="{% url 'biodata' %}">Biodata</a></li>
+                <li><a href="{% url 'History' %}">History</a></li>
+            </ul>
+         </div>
+    </header>
+
+    <!--  image  -->
+    <section class="banner">
+        <h2>Haii, This is My Biodata</h2>
+    </section>
+
+    <!-- about  -->
+    <section class="about">
+        <div class="container">
+            <h3>About me</h3>
+            <p>Saya mahasiswa Universitas Islam Madura fakultas Teknik prodi Teknik Informatika, saya mengambil jurusan ini krn saya ingin melanjutkan study saya dari SMK. saya mengambil teknik bukan karena gaya tapi saya ingin bergabung menajadi seorang IT, saya berpikir bahawa belajar IT itu mudah tapi ternyata ekxpetasi saya teralalu tinggi untuk memahami tentang IT, tetapi saya lebih suka membahas jaringan daripada coding dan yaaa mau dk mau saya harus tau coding juga. 
+            The End</p>
+        </div>
+    </section>
+
+    <!--  footer  -->
+    <footer>
+        <div class="container">
+            <small>Copyright & copy; 2023 - fdaate. All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src="{% static 'js/java.js' %}"></script>
+</body>
+</html>
